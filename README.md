@@ -28,7 +28,7 @@ In case you want to use Lund2013 dataset:
 
 - from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1476449.svg)](https://doi.org/10.5281/zenodo.1476449)  download `data.gen.pkl` and place it to `./logdir/MODEL_DIR/data` 
 
-###Training gazeNet
+### Training gazeNet
 To train a new model run `train.py`. Script takes the following arguments:
 ```sh
   --model_dir MODEL_DIR
@@ -60,7 +60,7 @@ Training data that was used in the paper can be downloaded from [![DOI](https://
 
 *TODO: decribe other parameters*
 
-##Running gazeNet
+## Running gazeNet
 To run gazeNet use `run_gazeNet.py`. Script takes the following parameters:
 
 ```sh
