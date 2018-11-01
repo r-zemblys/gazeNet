@@ -1,0 +1,84 @@
+{
+    "cuda": true, 
+    "mode": "train", 
+    "seq_len": 100, 
+    "split_seqs": true, 
+    "events": [
+        1, 
+        2, 
+        3
+    ], 
+    "augment": true, 
+    "augment_noise": [
+        0.0, 
+        0.5, 
+        0.005
+    ], 
+    "data_train": [
+        "data.gen.pkl"
+    ], 
+    "data_val": [
+        "data.val_clean.pkl"
+    ], 
+    "data_train_gen": [
+        "data.unpaired_clean.pkl"
+    ], 
+    "save_every": 50, 
+    "val_every": 50, 
+    "batch_size": 100, 
+    "keep_prob": 0.75, 
+    "learning_rate": 0.001, 
+    "learning_rate_anneal": 1.0, 
+    "model_name": [
+        "gazeNET_0004_00003750.pth.tar"
+    ], 
+    "max_to_keep": 0, 
+    "architecture": {
+        "conv_stack": [
+            [
+                "conv1", 
+                8, 
+                [
+                    2, 
+                    11
+                ], 
+                [
+                    1, 
+                    1
+                ]
+            ], 
+            [
+                "conv2", 
+                8, 
+                [
+                    2, 
+                    11
+                ], 
+                [
+                    1, 
+                    1
+                ]
+            ]
+        ], 
+        "rnn_stack": [
+            [
+                "gru1", 
+                64, 
+                true, 
+                true
+            ], 
+            [
+                "gru2", 
+                64, 
+                true, 
+                true
+            ], 
+            [
+                "gru3", 
+                64, 
+                true, 
+                true
+            ]
+        ]
+    }
+}
