@@ -14,7 +14,7 @@ gazeNet was developed on linux using Python 2.7 and PyTorch 0.2.0_4. Other requi
 ## Training a new model
 To train a new gazeNet model you will need your own coded eye-movement data or alternatively you can use Lund2013 dataset. 
 
-If you use your own dataset, convert it to ETData format and copy training and validation sets to separate folders in `./logdir/MODEL_DIR/data`. See [Config file](# Config file) below for further setup. Also check `./utils_lib/data_prep/tt_split.py` for an example how to convert your data to ETData format.
+If you use your own dataset, convert it to ETData format and copy training and validation sets to separate folders in `./logdir/MODEL_DIR/data`. See [Config file](#config-file) below for further setup. Also check `./utils_lib/data_prep/tt_split.py` for an example how to convert your data to ETData format.
 
 
 ### Preparing Lund2013 dataset
@@ -55,7 +55,7 @@ The following variables in `config.json` define training and validatation datase
 "data_train_gen": ["data.unpaired_clean.pkl"]
 ```
 
-Training data that was used in the paper can be downloaded from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1476449.svg)](https://doi.org/10.5281/zenodo.1476449), while validation datasets can be generated using `./utils_lib/data_prep/tt_split.py` script (see [Preparing Lund2013 dataset](# Preparing Lund2013 dataset) above ).
+Training data that was used in the paper can be downloaded from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1476449.svg)](https://doi.org/10.5281/zenodo.1476449), while validation datasets can be generated using `./utils_lib/data_prep/tt_split.py` script (see [Preparing Lund2013 dataset](#preparing-lund2013-dataset) above ).
 
 
 *TODO: decribe other parameters*
