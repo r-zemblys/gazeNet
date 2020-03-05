@@ -15,7 +15,9 @@ import numpy as np
 #import matplotlib.pyplot as plt
 #plt.ion()
 
-sys.path.append('..')
+upDir = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..'))
+sys.path.insert(0,upDir)
+
 
 #import seaborn as sns
 #sns.set_style("ticks")
