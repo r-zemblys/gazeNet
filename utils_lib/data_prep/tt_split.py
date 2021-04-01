@@ -130,7 +130,7 @@ if not os.path.exists(ddir):
     mkpath(ddir)
 
     #try to convert from mat
-    fdir_mat = 'EyeMovementDetectorEvaluation/annotated_data/images'
+    fdir_mat = 'EyeMovementDetectorEvaluation/annotated_data/originally uploaded data/images'
     FILES_MAT = glob.glob('%s/%s/*.mat'% (args.root, fdir_mat))
 
     for fpath in tqdm(FILES_MAT):
